@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.fade-in {
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

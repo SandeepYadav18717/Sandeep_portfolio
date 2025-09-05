@@ -1,0 +1,54 @@
+/* responsive.css */
+
+/* Common fixes */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Flex containers wrap ho jayein */
+#card-contain,
+#card-skill,
+#card-skills {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Input, Button global fix */
+input, button {
+  width: 90%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Tablet breakpoint */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  #container {
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  #overlay {
+    font-size: 2rem;
+    top: 20%;
+    left: 5%;
+  }
+  .Back, .Back-X,
+  .card-1, .card-2, .card-3, .card-4,
+  .card-skill-1, .card-skill-2, .card-skill-3, .card-skill-4 {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+  }
+}

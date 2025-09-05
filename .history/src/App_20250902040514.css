@@ -1,0 +1,46 @@
+/* sab page pe common hidden state */
+.section {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Home page apna animation */
+.home.animate {
+  animation: homeAnim 1s ease forwards;
+}
+
+/* Skills page apna animation */
+.skills.animate {
+  animation: skillsAnim 1s ease forwards;
+}
+
+/* Projects page apna animation */
+.projects.animate {
+  animation: projectsAnim 1s ease forwards;
+}
+
+/* Contact page apna animation */
+.contact.animate {
+  animation: contactAnim 1s ease forwards;
+}
+
+/* Ye wo animations hai jo tu already bana chuka hai */
+@keyframes homeAnim {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes skillsAnim {
+  from { opacity: 0; transform: scale(0.8); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes projectsAnim {
+  from { opacity: 0; transform: translateX(-80px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes contactAnim {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

@@ -1,0 +1,32 @@
+import Navbar from "./navbar/Navbar";
+import Index from "./Pages/Index";
+import Skills from "./Pages/Skills";
+import Cards from "./Cards/Cards";
+import Contact from "./Contact/contact";
+import "./App.css";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+
+      <section id="home" className="section fade-in">
+        <Index />
+      </section>
+
+      <section id="skills" className="section fade-in">
+        <Skills />
+      </section>
+
+      <section id="projects" className="section fade-in">
+        <Cards />
+      </section>
+
+      <section id="contact" className="section fade-in">
+        <Contact />
+      </section>
+    </>
+  );
+}
+
+export default App;

@@ -1,0 +1,240 @@
+import "./Card.css";
+
+function Card(props) {
+  return (
+    <div className={props.className}>
+       {/* //<div className="card-1"> </div> */}
+      <div className={props.backClass}> 
+        {/* //<div className="Back"> </div> */}
+        <h3>{props.title}{props.icon}</h3>
+          {/* title="Machine Learning Project" */}
+        <p>{props.description}</p>
+      </div>
+    </div>
+  );
+}
+
+function Cards() {
+  return (
+    <div>
+    <text
+    
+        style={{
+          
+          color: "#FFD700",
+        fontFamily: 'Cinzel',
+          textAlign: "center",
+          fontSize: "40px",
+          marginTop: "25%",
+          marginLeft:"40%"
+        }}
+      >
+        Projects Describe
+      </text>
+
+      <div id="card-contain">
+        {/* Card-1 */}
+        <Card 
+        className="card-1"
+        backClass="Back"
+        title="A.I Based Project"
+        description="Developed a back-end system using Python and pandas to automatically send
+          tailored mass emails to more than 1000 recipients. Developed a user-friendly
+          front-end   , CSS, and JavaScript, enabling users to upload
+          files and extract over 100 email addresses. Successfully implemented logic to
+          dynamically populate email templates, reducing 20% manual effort."
+        />
+
+        {/* Card-2 */}
+        <Card
+          className="card-2"
+          backClass="Back-X"
+          title="Machine Learning Based"
+          description="Created a Supervised Learning model for Behavioral Pattern Recognition to
+          effectively arrange and distribute time for more than 15 user tasks. 10% more
+          user productivity and time savings were achieved through suggested performance
+          enhancements and intelligent time allocation using HTML, CSS, JavaScript, and ML."
+        />
+
+        {/* Card-3 */}
+        <Card
+          className="card-3"
+          backClass="Back"
+          title="Book Writing Project"
+          description="Co-authoring a technical book on Machine Learning (ML) concepts and applications with 1+ one or more faculty members. 
+ Using real-world examples in Python, I have written and organized more than 5 chapters on the basics of supervised learning techniques, such as linear regression. 
+"
+        />
+
+        {/* Card-4 */}
+        <Card
+          className="card-4"
+          backClass="Back-X"
+          title="Behavioral Pattern Recognition"
+          description="Created a Supervised Learning model for Behavioral Pattern Recognition to
+          effectively..."
+        />
+      </div>
+    </div>
+  );
+}
+export { Card };
+export default Cards;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+.aesthetic-heading {
+  font-family: 'Cinzel', serif;
+  font-size: 65px;
+  letter-spacing: 4px;
+  color: #e0c097;
+  text-align: center;
+  margin-top: 50px;
+  text-shadow: 2px 2px 15px rgba(224, 192, 151, 0.6);
+}
+
+#card-contain{
+    display: flex;
+    
+    height:250px;
+    margin-top: 10%;
+    justify-content: center;
+    border-radius: 25px;
+    gap:4%
+    
+        
+  
+}
+
+
+.Back {
+  background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+  height: 250px;
+  width: 250px;
+  border-radius: 25px 80px 25px  80px;
+  border: 3px double gold;   
+   margin-left: 0px;
+   padding-left: 20px;
+   padding-top: 20px;
+  transition: transform 0s ease;
+  box-shadow: 5px 10px 18px 5px black ;
+  animation: card 1s ease-in-out 0s;
+    
+}
+@keyframes card {
+  0%{
+    transform: scale(0.5);
+    opacity: 0;
+  
+
+  }
+  
+ 
+  100%{
+    transform: scale(1);
+    opacity: 200;
+  }
+  
+}
+
+.Back:hover {
+ transform: rotateY(180deg);
+ height:400px;
+ color: wheat; 
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  border: 3px solid gold;
+  box-shadow: 5px 10px 18px  crimson;
+  font-family:'Montserrat' ;
+}
+
+.Back-X {
+  background: linear-gradient(-135deg, #3a1c71, #d76d77, #ffaf7b);
+  height: 250px;
+  width: 250px;
+  padding-left: 20px;
+  padding-top: 50px;
+  border-radius: 50px;
+   margin-left: 0px;
+  transition: transform 0s ease;
+  box-shadow: 5px 10px 18px 10px black;
+
+     
+}
+.Back-X:hover {
+  transform: rotateX(180deg);
+ height:400px;
+ padding-top: 20px;
+ color: wheat; 
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  border: 3px solid gold;
+  box-shadow: 5px 10px 18px  crimson;
+  font-family:'Montserrat' ;
+   
+
+ 
+}
+
+.card-1,.card-3  {
+  border-radius: 25px;
+  height: 250px;
+   margin-left: 40px;
+  color: transparent;
+  transition: transform 1s ease;
+  
+    
+}
+.card-1:hover {
+  transform: rotateY(180deg);
+
+ 
+}
+
+
+.card-2,.card-4 {
+
+  height: 450px;
+  width: 250px;
+  border-radius: 25px;
+   margin-left: 40px;
+  transition: transform 1s ease;
+  color: transparent;
+    
+}
+
+.card-2:hover {
+  transform: rotatex(180deg); 
+  
+}
+
+
+.card-3:hover {
+  transform: rotateY(180deg);
+   color: wheat;  
+}
+
+.card-4:hover {
+  transform: rotateX(180deg); 
+  
+}
+body{
+ background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #f8f8f8;
+            min-height: 100vh;
+            padding: 20px;
+}
+h3{
+  color: yellow;
+  font-size: xx-large;
+  margin-top:0% ;
+}
+h3:hover{
+  color: yellow;
+  
+  margin-top:0% ;
+}
+p{
+  margin-top: 0%;
+}
+
+
+

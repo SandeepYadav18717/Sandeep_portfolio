@@ -1,0 +1,87 @@
+
+html { scroll-behavior: smooth; }
+
+.section {
+  min-height: 100vh;
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 1.2s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.page {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* Jab page viewport me visible ho tab animation lagao */
+.page.active {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Index wali animation */
+#index .page.active {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Skills wali animation */
+#skills .page.active {
+  animation: zoomIn 1s ease forwards;
+}
+
+/* Projects wali animation */
+#projects .page.active {
+  animation: slideInLeft 1s ease forwards;
+}
+
+/* Contact wali animation */
+#contact .page.active {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

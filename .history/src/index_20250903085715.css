@@ -1,0 +1,88 @@
+/* responsive.css */
+
+/* ✅ Global Fix */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+/* ✅ Images auto fit */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ✅ Containers center aligned */
+.container, 
+#card-contain, 
+#card-skill, 
+#card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ✅ Text always readable */
+h1, h2, h3, p {
+  word-wrap: break-word;
+  text-align: center;
+}
+
+/* 📱 Mobile (max 600px) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .card-1, .card-2, .card-3, .card-4,
+  .card-skill-1, .card-skill-2, .card-skill-3, .card-skill-4,
+  .Back, .Back-X {
+    width: 90%;
+    margin: 10px auto;
+  }
+  #overlay {
+    font-size: 1.8rem;
+    top: 15%;
+    left: 5%;
+  }
+}
+
+/* 💻 Tablet (max 992px) */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .container {
+    padding: 10px;
+  }
+}
+/* global.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}

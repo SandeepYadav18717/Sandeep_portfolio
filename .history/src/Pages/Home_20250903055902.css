@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+#detail {
+  position: relative;
+  margin-top: 0%;
+  height: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bg-Photo {
+  height: 250px;
+  width: 250px;
+  background: linear-gradient(to right, #ff9966, #ff5e62);
+  border-radius: 50%;
+  margin-bottom: 30px;
+  margin-left: 100vh;
+  box-shadow: 12px 5px 25px #ff5e62;
+  animation: photoSlide 1.5s ease forwards;
+   display:flex;
+ justify-content: space-between;
+ 
+}
+
+@keyframes photoSlide {
+  from {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+#name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 50%;
+  animation: nameSlide 1.5s ease forwards;
+}
+
+@keyframes nameSlide {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+#role {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: #ffd700;
+  margin-bottom: 20px;
+  animation: roleSlide 1.5s ease forwards;
+  margin-left: 50%;
+}
+
+@keyframes roleSlide {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+#intro {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  margin-right: 100vh;
+  max-width: 100vh;
+  text-shadow: 2px 2px 5px black;
+  animation: introSlide 2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes introSlide {
+  from {
+    transform: translateY(200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#overlay {
+  position: absolute;
+  color:  #ff5e62;
+  top: 40%;
+  left: 5%;
+  font-size: 400%;
+  height: 100%;
+}
+
+#name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 20px;
+
+
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#overlay{
+   font-family:  'Dancing Script', cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  display:flex;
+  gap:10px
+
+
+}
+
+
+
+
+#Linkdin{
+  height:50px;
+  width:50px;
+  margin-top: 40%;
+ 
+  border-radius: 50%;
+  animation: photoSlide 1.5s ease forwards;
+}
+#instagram{
+  background-color: #fbc2eb;
+   height:50px;
+  width:50px;
+  <img src={Linkdin} alt=""
+        style={{
+        width: "50px",
+        height: "50px",
+         borderRadius: "50%",
+        objectFit: "cover",
+        border: "2px solid #0A66C2",
+           marginTop: "0px"   }} />
+}

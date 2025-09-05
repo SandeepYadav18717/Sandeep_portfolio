@@ -1,0 +1,33 @@
+import { Card } from "../Cards/Cards";
+import "./certi.css"
+import python from "./python.png";
+import Html from"./Html.jpg";
+import image from "./C:\Users\Administrator\Desktop\data analytics by tata group\Resumes\Project_sandeep\Colour_gradient\React-new\src\Certifitae\image_cd97ae3d-5304-4b07-9a13-3357f6d9babd20230831_163952.jpg"
+
+function Cert() {
+ 
+  return (
+    <div>
+         <h1> Certifications & Achievements</h1>
+      <div id="card-skills">
+      
+         
+           <img src={python} alt="python" />
+        
+       
+           <img src={Html} alt="" />
+      
+        <Card
+          className="card4"
+          
+        />
+      </div>
+
+      
+      </div>
+  
+   
+  );
+}
+
+export default Cert;

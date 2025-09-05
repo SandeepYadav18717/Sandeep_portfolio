@@ -1,0 +1,30 @@
+/* Tablet */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 2rem;
+  }
+  #overlay {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #card-contain, 
+  #card-skill, 
+  #card-skills {
+    flex-direction: column;   /* 👈 stack vertically */
+    align-items: center;
+  }
+
+  .card, 
+  .card-1, .card-2, .card-3, .card-4,
+  .card-skill-1, .card-skill-2, .card-skill-3, .card-skill-4 {
+    width: 90%;
+    max-width: 320px;
+  }
+}

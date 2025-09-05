@@ -1,0 +1,40 @@
+import { Card } from "../Cards/Cards";
+import "./certi.css"
+
+function Cert() {
+  const img=[
+    "Html.jpg"
+  ]
+  return (
+    <div>
+         <h1> Certifications & Achievements</h1>
+      <div id="card-skills">
+        <Card 
+          className="card1"
+       {img.map((image, index) => (
+   <img key={index} src={image} alt="certification" />
+))}
+          
+        />
+        <Card
+          className="card2"
+        
+        />
+        <Card
+          className="card3"
+          
+        />
+        <Card
+          className="card4"
+          
+        />
+      </div>
+
+      
+      </div>
+  
+   
+  );
+}
+
+export default Cert;

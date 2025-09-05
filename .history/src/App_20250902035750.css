@@ -1,0 +1,14 @@
+
+html { scroll-behavior: smooth; }
+
+
+.page {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-in-out;
+}
+
+.page.active {
+  opacity: 1;
+  transform: translateY(0);
+}

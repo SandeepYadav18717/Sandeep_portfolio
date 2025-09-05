@@ -1,0 +1,37 @@
+/* Global fix */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Desktop width */
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Cards or sections */
+.card, .section {
+  flex: 1 1 300px; /* shrink/expand auto */
+  max-width: 400px;
+  margin: 10px;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
